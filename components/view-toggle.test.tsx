@@ -5,17 +5,17 @@ import { ViewToggle } from "./view-toggle";
 test("click switches the label", async () => {
   // Arrange
   render(<ViewToggle />);
-  const button = screen.getByText("Switch to compact");
+  const button = screen.getByText("Switch to compact CI");
 
   // Act
   await userEvent.click(button);
 
   // Assert
-  expect(screen.getByText("Switch to comfortable")).toBeInTheDocument();
+  expect(screen.getByText("Switch to comfortable CI")).toBeInTheDocument();
 
    // Act
   await userEvent.click(button);
 
   // Assert
-  expect(screen.getByText("Switch to compact")).toBeInTheDocument();
+  expect(screen.getByText("Switch to compact CI")).toBeInTheDocument();
 });

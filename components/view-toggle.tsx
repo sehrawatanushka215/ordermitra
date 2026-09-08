@@ -21,7 +21,7 @@ export function ViewToggle({ onToggle }: Props) {
 
   return (
     <button type="button" onClick={handleClick}>
-      {compact ? "Switch to comfortable" : "Switch to compact"}
+      {compact ? "Switch to comfortable CI" : "Switch to compact CI"}
     </button>
   );
 }
